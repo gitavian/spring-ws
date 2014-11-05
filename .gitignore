@@ -3,3 +3,6 @@ target
 .jar
 .zip
 .tar.gz
+## Directory-based project format:
+.idea/
+*.iml
