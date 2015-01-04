@@ -25,9 +25,9 @@ public class SpringWsImpl implements SpringWs {
 	MyObject myObject;
 
 	@WebMethod(operationName = "sayHello")
-	public void sayHello(String message) {
+	public String sayHello(String message) {
 		System.out.println(myObject.printMessage(message));
-
+		return myObject.printMessage(message);
 	}
 
 	@WebMethod(operationName="fileUploader")

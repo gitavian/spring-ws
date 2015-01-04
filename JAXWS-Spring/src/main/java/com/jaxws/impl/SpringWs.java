@@ -12,6 +12,6 @@ import com.jaxws.model.Uploader;
 @WebService
 @SOAPBinding(style=Style.DOCUMENT, use=Use.LITERAL)
 public interface SpringWs {
-	@WebMethod public void sayHello(@WebParam(name="message") String message);
+	@WebMethod public String sayHello(@WebParam(name="message") String message);
 	@WebMethod public void uploadFile(@WebParam(name="file") Uploader uploader);
 }
